@@ -18,6 +18,7 @@ import { APIService } from './api.service';
 import { AppComponent } from './app.component';
 import { StandardComponent } from './standard.component';
 import { App1HomeComponent } from './app1-home.component';
+import { CustomPageComponent } from './custom-page.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { App1HomeComponent } from './app1-home.component';
     NoMatchComponent,
     StandardComponent,
     App1HomeComponent,
+    CustomPageComponent,
   ],
   imports: [
     BrowserModule,
