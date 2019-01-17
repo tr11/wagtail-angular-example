@@ -1,27 +1,15 @@
-# WagtailAngular
+# wagtail-angular-example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+This project shows how to to build a simple [Angular](https://angular.io/) app using the [wagtail-graphql](https://github.com/tr11/wagtail-graphql) app. 
 
-## Development server
+## Features
+This repo shows how to:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Request page information from wagtail-graphql as a route fallback
+* Load regular Angular pages that rely on the GraphQL API to get data from Wagtail
 
-## Code scaffolding
+The points above mean that Angular will try to match any route using the typical route matching, but instead of falling back to a static page, it dynamically creates the route match if the url exits in Wagtail.  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Developing
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The project relies on [Angular CLI](https://github.com/angular/angular-cli) -- all the typical instructions using the `ng` command still aplly.
