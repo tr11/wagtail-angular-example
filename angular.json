@@ -135,5 +135,13 @@
       }
     }
   },
-  "defaultProject": "wagtail-angular"
+  "defaultProject": "wagtail-angular",
+  "cli": {
+    "packageManager": "yarn"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

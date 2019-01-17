@@ -1,0 +1,20 @@
+<div>
+  <h3>TestApp 1 Homepage</h3>
+</div>
+<div>
+  <b>URL:</b> {{url ? url : '/'}}
+</div>
+<div>
+  Link: <a href="{{data.fieldUrl}}">{{data.fieldUrl}}</a>
+</div>
+<div>
+  Published: {{data.firstPublishedAt}}
+</div>
+<div>
+  UUID: {{data.fieldUuid}}
+</div>
+
+<p>Data:</p>
+<pre>
+{{data | json}}
+</pre>
