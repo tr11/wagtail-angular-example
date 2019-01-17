@@ -16,7 +16,7 @@ import {environment} from '../environments/environment';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'wagtail-angular';
+  title = 'wagtail-angular-example';
 
   constructor(
     apollo: Apollo,
