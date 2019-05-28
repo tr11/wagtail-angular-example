@@ -13,7 +13,7 @@ const PageQuery = require('graphql-tag/loader!./gql/pages.graphql');
 import { PageTypeQuery, PageDetailsQuery } from './gql/types';
 
 const SnippetsQuery = require('graphql-tag/loader!./gql/snippets.graphql');
-import { TestApp_2Advert } from './gql/types';
+import { TestApp_1Advert } from './gql/types';
 
 
 @Injectable({
@@ -45,7 +45,7 @@ export class APIService {
 
   /* other queries */
   snippets(): Observable<any> {
-    return this.apollo.query<TestApp_2Advert[]>({
+    return this.apollo.query<TestApp_1Advert[]>({
       query: SnippetsQuery.AdvertsQuery,
     }).pipe(
       map((result: any) => result.data.snippets )

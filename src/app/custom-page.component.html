@@ -6,3 +6,10 @@
 
 <p>Snippets:</p>
 <pre>{{data | json}}</pre>
+
+
+<p>Images:</p>
+<div *ngFor="let image of images">
+  <img [src]="apiBase + image">
+  {{image}}
+</div>

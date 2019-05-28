@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   api: 'http://localhost:8000/graphql',
+  apiBase: 'http://localhost:8000'
 };
 
 /*

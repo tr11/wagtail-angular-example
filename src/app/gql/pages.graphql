@@ -137,10 +137,12 @@ query PageDetailsQuery($url: String) {
           }
           fieldImage {
             title
+            urlLink
           }
           fieldImageList {
             title
             width
+            urlLink
           }
           fieldSnippet {
             text
@@ -163,6 +165,7 @@ query PageDetailsQuery($url: String) {
           value {
             title
             width
+            urlLink
           }
           field
         }
@@ -207,10 +210,11 @@ query PageDetailsQuery($url: String) {
           value {
             title
             width
+            urlLink
           }
           field
         }
-        ... on PageInterfaceListBlock {
+        ... on PageListBlock {
           value {
             title
           }

@@ -1,8 +1,8 @@
 
 query AdvertsQuery {
-  snippets(typename: "Test_app_2Advert") {
+  snippets(typename: "Test_app_1Advert") {
     __typename
-    ... on Test_app_2Advert {
+    ... on Test_app_1Advert {
       id
       url
       text

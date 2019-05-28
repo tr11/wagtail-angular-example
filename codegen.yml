@@ -1,0 +1,14 @@
+schema:
+  - "http://127.0.0.1:8000/graphql"
+documents:
+  - "./src/**/*.graphql"
+config: {}
+generates:
+  src/app/gql/types.ts:
+    config: {}
+    plugins:
+      - "typescript-common"
+      - "typescript-client"
+      - "typescript-server"
+require: []
+
